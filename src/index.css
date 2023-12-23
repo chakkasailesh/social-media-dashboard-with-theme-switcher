@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 /* Box sizing rules */
 *,
 *::before,
@@ -61,4 +63,9 @@ svg {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
 }
