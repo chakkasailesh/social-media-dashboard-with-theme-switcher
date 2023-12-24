@@ -38,3 +38,62 @@ export const apps = [
     net: 'red',
   },
 ]
+
+export const stats = [
+  {
+    id: 1,
+    name: 'Page Views',
+    icon: facebook,
+    count: 87,
+    change: 3,
+  },
+  {
+    id: 2,
+    name: 'Likes',
+    icon: facebook,
+    count: 52,
+    change: -2,
+  },
+  {
+    id: 3,
+    name: 'Likes',
+    icon: instagram,
+    count: 5462,
+    change: 2257,
+  },
+  {
+    id: 4,
+    name: 'Profile Views',
+    icon: instagram,
+    count: '52k',
+    change: 1375,
+  },
+  {
+    id: 5,
+    name: 'Retweets',
+    icon: twitter,
+    count: 117,
+    change: 303,
+  },
+  {
+    id: 6,
+    name: 'Likes',
+    icon: twitter,
+    count: 507,
+    change: 553,
+  },
+  {
+    id: 7,
+    name: 'Likes',
+    icon: youtube,
+    count: 107,
+    change: -19,
+  },
+  {
+    id: 8,
+    name: 'Page Views',
+    icon: youtube,
+    count: 1407,
+    change: -12,
+  },
+]
