@@ -24,6 +24,36 @@ $Twitter: hsl(203, 89%, 53%);
 $Instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
 $YouTube: hsl(348, 97%, 39%);
 
+.facebook {
+  border-top: 4px solid $Facebook;
+}
+.twitter {
+  border-top: 4px solid $Twitter;
+}
+// .instagram {
+//   border-top-width: 4px;
+//   border-top-style: solid;
+//   border-image: $Instagram;
+//   border-image-slice: 1;
+// }
+.instagram {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: $Instagram;
+    border-radius: 10px 10px 0 0;
+  }
+}
+.youtube {
+  border-top: 4px solid $YouTube;
+}
+
 .upper {
   background-color: $LightTopBG;
   height: 200px;
@@ -130,6 +160,64 @@ $YouTube: hsl(348, 97%, 39%);
   }
 }
 
+.apps {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.appcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: $LightCardBG;
+  padding: 20px 70px;
+  border-radius: 4px;
+}
+
+.apptop {
+  display: flex;
+  gap: 10px;
+  color: $GrayishBlueText;
+  font-weight: 700;
+}
+
+.appmiddle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    font-size: 45px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: $GrayishBlueText;
+  }
+}
+
+.appbottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  p {
+    font-size: 10px;
+    font-weight: 700;
+  }
+}
+
+.limegreen {
+  color: $LimeGreen;
+}
+.brightred {
+  color: $BrightRed;
+}
+
 @media (min-width: 768px) {
   .header {
     width: 90%;
@@ -162,5 +250,9 @@ $YouTube: hsl(348, 97%, 39%);
         }
       }
     }
+  }
+
+  .apps {
+    flex-direction: row;
   }
 }
