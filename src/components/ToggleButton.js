@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from '../themeContext'
 
 const ToggleButton = () => {
+  const { switchTheme } = useContext(ThemeContext)
   const handleClick = () => {
-    console.log('clicked')
+    switchTheme()
   }
   return (
     <label className="toggle-container">

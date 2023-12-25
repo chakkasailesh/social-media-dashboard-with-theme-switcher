@@ -30,12 +30,6 @@ $YouTube: hsl(348, 97%, 39%);
 .twitter {
   border-top: 4px solid $Twitter;
 }
-// .instagram {
-//   border-top-width: 4px;
-//   border-top-style: solid;
-//   border-image: $Instagram;
-//   border-image-slice: 1;
-// }
 .instagram {
   position: relative;
 
@@ -59,14 +53,19 @@ $YouTube: hsl(348, 97%, 39%);
   height: 200px;
   position: absolute;
   width: 100%;
+  &.dark {
+    background-color: $DarkTopBG;
+  }
 }
 
 .lower {
   background-color: $LightBG;
-  height: calc(100% - 200px);
   position: absolute;
   top: 200px;
   width: 100%;
+  &.dark {
+    background-color: $DarkBG;
+  }
 }
 
 .main {
@@ -95,6 +94,16 @@ $YouTube: hsl(348, 97%, 39%);
 
     padding-bottom: 1rem;
     border-bottom: 1.3px solid $GrayishBlueText;
+
+    &.dark {
+      border-bottom: 1.3px solid $BlueText;
+      h2 {
+        color: $WhiteText;
+      }
+      p {
+        color: $BlueText;
+      }
+    }
   }
 
   .mode {
@@ -106,6 +115,11 @@ $YouTube: hsl(348, 97%, 39%);
       color: $GrayishBlueText;
       font-size: 12px;
       font-weight: 600;
+    }
+    &.dark {
+      p {
+        color: $BlueText;
+      }
     }
   }
 }
@@ -176,6 +190,9 @@ $YouTube: hsl(348, 97%, 39%);
   padding: 20px 70px;
   width: 250px;
   border-radius: 4px;
+  &.dark {
+    background-color: $DarkCardBG;
+  }
 }
 
 .apptop {
@@ -183,6 +200,9 @@ $YouTube: hsl(348, 97%, 39%);
   gap: 10px;
   color: $GrayishBlueText;
   font-weight: 700;
+  &.dark {
+    color: $BlueText;
+  }
 }
 
 .appmiddle {
@@ -198,6 +218,14 @@ $YouTube: hsl(348, 97%, 39%);
     font-size: 12px;
     letter-spacing: 4px;
     color: $GrayishBlueText;
+  }
+  &.dark {
+    h2 {
+      color: $WhiteText;
+    }
+    p {
+      color: $BlueText;
+    }
   }
 }
 
@@ -261,6 +289,15 @@ $YouTube: hsl(348, 97%, 39%);
       }
     }
   }
+  &.dark {
+    background-color: $DarkCardBG;
+    .title {
+      color: $BlueText;
+    }
+    h3 {
+      color: $WhiteText;
+    }
+  }
 }
 .overview {
   width: 90%;
@@ -269,6 +306,11 @@ $YouTube: hsl(348, 97%, 39%);
     font-size: 20px;
     font-weight: 700;
     color: $GrayishBlueText;
+  }
+  &.dark {
+    h2 {
+      color: $BlueText;
+    }
   }
 }
 
@@ -279,6 +321,9 @@ $YouTube: hsl(348, 97%, 39%);
     justify-content: space-between;
     .heading {
       border: none;
+      &.dark {
+        border: none;
+      }
     }
 
     .mode {
